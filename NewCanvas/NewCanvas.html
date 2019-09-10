@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <canvas id="C" width="500" height="1000"></canvas>
+    <script>
+
+    
+         function drawDiamond(){
+         var C = document.querySelector("#C")
+         var ctx = C.getContext("2d")
+        ctx.moveTo(0, 250);
+         ctx.lineTo(250, 500);
+         ctx.lineTo(500,250);
+        ctx.lineTo(250,0);
+         ctx.lineTo(0,250)
+         ctx.stroke();
+
+        }
+   // console.log(drawDiamond())
+   
+    </script>
+    <button width="550" height="500" onclick="drawDiamond()">"Draw a Diamond!"</button>
+
+
+</body>
